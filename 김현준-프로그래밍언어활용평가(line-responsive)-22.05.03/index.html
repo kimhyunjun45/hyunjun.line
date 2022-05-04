@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>김현준-line-responsiveWeb</title>
+    <!-- font-awesome : text icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/jquery-1.12.4.min.js"></script>
+    <!-- swipe : 손가락으로 터치되는 슬라이드 플러그인 -->
+    <script src="./js/swipe.js"></script>
+    <!-- easing : 메뉴 클릭시 페이지 전환 동작 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+    <script src="./js/line.js"></script>
+</head>
+
+<body>
+    <div id="wrap">
+        <!-- header -->
+        <header>
+            <div class="container">
+                <!-- logo -->
+                <h1><a href="#">LINE</a></h1>
+                <!-- mobile toggle btn -->
+                <button class="btn-gnb">메인메뉴</button>
+                <!-- pc / mobile menu -->
+                <nav>
+                    <ul class="gnb clearfix">
+                        <li><a href="#"><i class="fa fa-picture-o"></i>무료메세지<span class="arrow_go">바로가기</span></a></li>
+                        <li><a href="#"><i class="fa fa-phone"></i>LINE VOOM<span class="arrow_go">바로가기</span></a></li>
+                        <li><a href="#"><i class="fa fa-file-text-o"></i>LINE스티커<span class="arrow_go">바로가기</span></a></li>
+                        <li><a href="#"><i class="fa fa-american-sign-language-interpreting"></i>LINE공유<span class="arrow_go">바로가기</span></a></li>
+                        <li><a href="#"><i class="fa fa-bank"></i>인기쿠폰<span class="arrow_go">바로가기</span></a></li>
+                    </ul>
+                </nav>
+                <!-- 언어선택 -->
+                <div class="opt">
+                    <div class="input_group">
+                        <label for="lang" class="blind">언어선택 </label>
+                        <!-- readonly : 클릭시 단락 라인 차단 -->
+                        <input type="text" id="lang" value="한국어" readonly />
+                        <span class="arrow">화살표</span>
+                        <!-- 언어리스트 -->
+                        <ul class="langlist clearfix">
+                            <li class="on"><a href="#">한국어</a></li>
+                            <li><a href="#">日本語</a></li>
+                            <li><a href="#">English</a></li>
+                            <li><a href="#">English(US)</a></li>
+                            <li><a href="#">中文(繁體)</a></li>
+                            <li><a href="#">中文(简体)</a></li>
+                            <li><a href="#">ภาษาไทย</a></li>
+                            <li><a href="#">Bahasa Indonesia</a></li>
+                            <li><a href="#">Tiếng Việt</a></li>
+                            <li><a href="#">Português</a></li>
+                            <li><a href="#">Melayu</a></li>
+                            <li><a href="#">Español(España)</a></li>
+                            <li><a href="#">Hindi</a></li>
+                            <li><a href="#">Español</a></li>
+                            <li><a href="#">Türkçe</a></li>
+                            <li><a href="#">Español(Argentina)</a></li>
+                            <li><a href="#">Русский</a></li>
+                            <li><a href="#">Italiano</a></li>
+                            <li><a href="#">Deutsch</a></li>
+                            <li><a href="#">Français</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- SNS -->
+                <ol class="sns clearfix">
+                    <li><a href="#">YOUTUBE</a></li>
+                    <li><a href="#">facebook</a></li>
+                </ol>
+            </div>
+        </header>
+        <!-- hr - 라인 하나 주는 태그 / top - 70px 여백설정 -->
+        <hr />
+        <!-- slide 4ea -->
+        <section>
+            <h2 class="blind">LINE의 다양한 서비스</h2>
+            <div id="mainbanner-swipe">
+                <ul class="mainbanner-container clearfix">
+                    <!-- slide-1 -->
+                    <li>
+                        <p>
+                            <strong>CLOSINGTHE DISTANCE</strong>
+                            <span>
+                                LINE을 통해 사람과 사람,
+                                사람과 서비스,
+                                사람과 정보가 가까워집니다.
+                            </span>
+                            <a href="#" target="_blank">다운로드</a>
+                        </p>
+                    </li>
+                    <!-- slide-2 -->
+                    <li>
+                        <p>
+                            <strong>LINERANGERS</strong>
+                            <span>
+                                귀여운 라인 캐릭터와 함께하는
+                                샐리 구하기 대작전!
+                                와계군단으로부터 마을과 샐리를 구해주세요!
+                            </span>
+                            <a href="#" target="_blank" class="android">Android</a>
+                            <a href="#" target="_blank" class="ios">iOS</a>
+                        </p>
+                    </li>
+                    <!-- slide-3 -->
+                    <li>
+                        <p>
+                            <strong>친구들과 함께 즐기는 세계 최대 아바타 SNS 라인플레이!</strong>
+                            <span>
+                                나와 쏙 닮은 아바타를 만들어
+                                나만의 프로필 사진으로 설정하고,
+                                나의 개성을 표현하는 다양한 아이템으로
+                                패션, 인테리어를 꾸며보세요.
+                            </span>
+                            <a href="#" target="_blank" class="android">Android</a>
+                            <a href="#" target="_blank" class="ios">iOS</a>
+                        </p>
+                    </li>
+                    <!-- slide-4 -->
+                    <li>
+                        <p>
+                            <strong>LINE 아이템을 다양한 결제방법으로 구매할 수 있는 LINE STORE</strong>
+                            <span>
+                                최신 아이템과 함께 이벤트 혜택도 받아보세요!
+                            </span>
+                            <!-- &gt; : 화살표 -->
+                            <a href="#" target="_blank">LINE STORE &gt;</a>
+                        </p>
+                    </li>
+                </ul>
+            </div>
+            <!-- 이전,다음,일시정지버튼 -->
+            <a href="#" class="mainbanner-navigation mainbanner-prev">이전</a>
+            <a href="#" class="mainbanner-navigation mainbanner-next">다음</a>
+            <a href="#" class="btn_auto pause">일시정지</a>
+            <!-- 인디케이터 ●●●● -->
+            <ol class="mainbanner-pagination clearfix">
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+            </ol>
+        </section>
+        <hr />
+        <!-- contents -->
+        <section id="mainsrv">
+            <!-- mobile - free download (btn) -->
+            <h2><a href="#" class="dnld">Free Download</a></h2>
+
+            <!-- mobile (text) / pc (img+text) - contents - 5ea -->
+            <!-- 무료메세지 -->
+            <article class="line_msg">
+                <div class="clearfix">
+                    <!-- img -->
+                    <span class="frame"><img src="./images/line_msg.jpg" alt="무료메세지"></span>
+                    <!-- text -->
+                    <div class="explain">
+                        <h3>
+                            언제 어디서나<br />
+                            무료 메세지
+                        </h3>
+                        <p>
+                            언제 어디서나 빠르고 간편하게 친구들과 무료 메세지를 나눠보세요.<br />
+                            1:1은 물론 그룹 대화도 가능합니다.<br />
+                            아이폰과 안드로이드, 윈도우폰, 블랙베리, 노키아폰 등의<br />
+                            스마트폰 뿐만 아니라 PC에서도 즐길 수 있습니다.
+                        </p>
+                    </div>
+                </div>
+            </article>
+            <!-- 무료통화 -->
+            <article class="line_tel">
+                <div class="clearfix">
+                    <div class="explain">
+                        <h3>
+                            LINE VOOM
+                        </h3>
+                        <p>
+                            LINE VOOM에서<br />
+                            취향에 맞는 계정을 팔로우하고,<br />
+                            멋진 동영상,<br />
+                            사진, 게시글을 만나보세요.<br /><br />
+                            라인 팔로우도<br />
+                            잊지마세요!
+                        </p>
+                    </div>
+                    <span class="frame"><img src="./images/line_tel.png" alt="무료통화"></span>
+                </div>
+            </article>
+            <!-- 라인스티커 -->
+            <article class="line_sticker">
+                <div class="clearfix">
+                    <span class="frame"><img src="./images/line_sticker.jpg" alt="라인스티커"></span>
+                    <div class="explain">
+                        <h3>
+                            대화가 더욱<br />
+                            즐거워지는<br />
+                            LINE 스티커
+                        </h3>
+                        <p>
+                            10,000개가 넘는 스티커와 이모티콘으로<br />
+                            미묘한 감정까지 섬세하게 표현해보세요.<br />
+                            LINE 스티커로 대화가 더 즐거워집니다.<br />
+                            스티커샵에서는 재기발랄한 LINE 오리지널 캐릭터 뿐만 아니라<br />
+                            전 세계 유명 캐릭터 스티커까지 모두 만나볼 수 있습니다.
+                        </p>
+                    </div>
+                </div>
+            </article>
+            <!-- 라인공유 -->
+            <article class="line_share">
+                <div class="clearfix">
+                    <div class="explain">
+                        <h3>
+                            사진/동영상<br />
+                            공유에서<br />
+                            음성 메세지까지
+                        </h3>
+                        <p>
+                            사진, 동영상 공유는 물론<br />
+                            음성메세지와 연락처, 위치정보 전송까지!<br />
+                            LINE이라면 쉽고 빠르게 공유할 수 있습니다.
+                        </p>
+                    </div>
+                    <span class="frame"><img src="./images/line_share.jpg" alt="라인공유"></span>
+                </div>
+            </article>
+            <!-- 인기쿠폰 -->
+            <article class="line_coupon">
+                <div class="clearfix">
+                    <span class="frame"><img src="./images/line_coupon.jpg" alt="인기쿠폰"></span>
+                    <div class="explain">
+                        <h3>
+                            인기 아티스트의<br />
+                            최신 소식과<br />
+                            쿠폰을<br />
+                            받아보세요.<br />
+                        </h3>
+                        <p>
+                            좋아하는 아티스트, 셀러브리티, 브랜드, TV프로그램의<br />
+                            공식 계정과 친구를 맺어보세요.<br />
+                            LINE에서만 공개되는 최신 소식과 유용한 쿠폰이<br />
+                            기다리고 있습니다.
+                        </p>
+                    </div>
+                </div>
+            </article>
+        </section>
+        <!-- footer -->
+        <footer>
+            <div class="bmenu">
+                <p class="fnb">
+                    <a href="#">개인정보처리방침</a><span class="bar">|</span>
+                    <a href="#">LINE블로그</a><span class="bar">|</span>
+                    <a href="#">LINE Creators Market</a><span class="bar">|</span>
+                    <a href="#">채용정보</a>
+                </p>
+            </div>
+        </footer>
+    </div>
+
+</body>
+
+</html>
